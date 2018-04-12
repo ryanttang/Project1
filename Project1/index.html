@@ -26,30 +26,31 @@
 
     </div>
     <!--Displays most recent event; Possible small jumbotron or card to display-->
-    <div class="card" style="width: 18rem;">
-      <div class="card-header">
-        Current Events
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Current Event 1</li>
-        <li class="list-group-item">Current Event 2</li>
-        <li class="list-group-item">Current Event 2</li>
-      </ul>
+    <div class = "Upcoming">
+            <div class="card">
+                    <div class="card-body">
+                      Current Game/Practice/etc; </br>
+                      Date and Times Here
+                    </div>
+                  </div>
     </div>
     <!--"Checking in" for the event; simple dropdown and submit combo-->
-    <div class = "Check In">
-        <p>Who's checking in?</p>
-        <select class="custom-select">
-                <option selected>Choose your name</option>
-                <option value="1">John Smith</option>
-                <option value="2">Jane Smith</option>
-                <option value="3">Daniel Smith</option>
-              </select>
-        <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  Default checkbox
-                </label>
-              </div>
+    <form>
+      <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Who's Checking In?</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">John Smith</option>
+            <option value="2">Jane Smith</option>
+            <option value="3">Daniel Brown</option>
+          </select>
+        </div>
+        <div class="col-auto my-1">
+          <button type="submit" class="btn btn-primary">Check in</button>
+        </div>
+      </div>
+    </form>
 
     </div>
     <!--Name of the location and address; using a "card" format via Bootstrap to display name of the location-->
