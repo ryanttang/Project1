@@ -8,22 +8,40 @@
     <title>Project: Untitled (for now)</title>
 </head>
 <body>
+    <!--We'll add a better nav here; will justify what each button or dropdown will function -->
+    <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </div>
     <!--Calender for current/upcoming events and times -->
     <div class = "Calender">
 
     </div>
-    <!--Displays most recent event-->
+    <!--Displays most recent event; Possible small jumbotron or card to display-->
     <div class = "Upcoming">
-
+            <div class="card">
+                    <div class="card-body">
+                      Current Game/Practice/etc; </br>
+                      Date and Times Here
+                    </div>
+                  </div>
     </div>
     <!--"Checking in" for the event; simple dropdown and submit combo-->
     <div class = "Check In">
         <p>Who's checking in?</p>
         <select class="custom-select">
                 <option selected>Choose your name</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">John Smith</option>
+                <option value="2">Jane Smith</option>
+                <option value="3">Daniel Smith</option>
               </select>
         <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -32,9 +50,15 @@
               </div>
 
     </div>
-    <!--Name of the location and address -->
+    <!--Name of the location and address; using a "card" format via Bootstrap to display name of the location-->
     <div class = "Address">
-    
+            <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
     </div>
     <!--Map and "pin" of the place -->
     <div class = "Map">
