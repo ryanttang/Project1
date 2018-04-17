@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Project: Untitled (for now)</title>
+</head>
+<body>
+    <!--We'll add a better nav here; will justify what each button or dropdown will function -->
+    <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </div>
+
+        
+    <!--Calender for current/upcoming events and times -->
+    <div class = "Calendar">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Calendar</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Season Schedule</h6>
+          <p class="card-text">2018-2019</p>
+          <a href="#" class="card-link">View Schedule</a>
+          <a href="#" class="card-link">Edit Schedule</a>
+        </div>
+      </div>
+    </div>
+
+<!--Displays most recent event; Possible small jumbotron or card to display-->
+<div class = "Upcoming">
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Upcoming Events
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Current Event 1</li>
+    <li class="list-group-item">Current Event 2</li>
+    <li class="list-group-item">Current Event 3</li>
+  </ul>
+</div>
+</div>
+
+    <!--"Checking in" for the event; simple dropdown and submit combo-->
+    <form>
+      <div class="card form-row align-items-center" style="width: 18rem;">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Who's Checking In?</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">John Smith</option>
+            <option value="2">Jane Smith</option>
+            <option value="3">Daniel Brown</option>
+          </select>
+        </div>
+        <div class="col-auto my-1">
+          <button type="submit" class="btn btn-primary">Check in</button>
+        </div>
+      </div>
+    </form>
+
+    </div>
+    <!--Name of the location and address; using a "card" format via Bootstrap to display name of the location-->
+    <div class = "Address">
+            <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Name of the actual place event is held (i.e., Wooden Arena</h5>
+                      <p class="card-text">Street address</br>
+                        City and State, Zip Code</p>
+                      <a href="#" class="btn btn-primary">Get Directions</a>
+                    </div>
+                  </div>
+    </div>
+    <!--Map and "pin" of the place -->
+    <div class = "Map">
+
+    </div>
+    
+</body>
+</html>
