@@ -11,7 +11,9 @@ $(document).ready(function() {
           map: map
         });
       }
-    });
+
+
+});
 
 
 
