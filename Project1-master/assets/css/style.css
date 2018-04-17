@@ -1,0 +1,22 @@
+ /* Always set the map height explicitly to define the size of the div  
+  * element that contains the map. */
+#map {
+    height: 300px;
+    width: 300px;
+
+}
+
+.googleCalendar{
+    position: relative;
+    height: 0;
+    width: 25%;
+    padding-bottom: 25%;
+  }
+  
+  .googleCalendar iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50;
+    height: 100%;
+  }
