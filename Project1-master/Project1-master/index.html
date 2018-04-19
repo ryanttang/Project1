@@ -5,7 +5,6 @@
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   </head>
   <body>
@@ -22,7 +21,6 @@
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
           </div>
-          
           <!--Jumbotron and title card -->
           <div class="jumbotron">
               <h1 class="text-center">TeamJOT</h1>
@@ -31,28 +29,7 @@
 
           <div class="container">
               <div class="card-columns">
-                <!--The displayed calendar, season schedule and schedule edit-->
-                <div class="Calendar">
-                  <div class="card">
-                      <h5 class="card-title">Game Calendar</h5>
-                      <button id="btnCreateEvents" class="btn btn-primary" onclick="makeApiCall();">
-                          Create Events</button>  
-                        <!--Google Calendar API-->
-                       <div id="divifm">
-                          <iframe id="ifmCalendar" 
-      
-                          src="https://www.google.com/calendar/embed?
-                          height=550&amp;wkst=1&amp;bgcolor=%23FFFFFF&
-                          amp;src=24tn4fht2sssdssfdiqqlsedk%40group.calendar.google.com&
-                          amp;color=%238C500B&amp;ctz=Asia%2FCalcutta"
-      
-                              style="border-width: 0" width="500" 
-      
-                              height="520" frameborder="0" scrolling="no">
-                          </iframe>
-                      </div>
-                    <!-- schedule viewing and editing -->  
-                    <div class="card-body">
+                <!--The displayed calendar, season schedule, and schedule edit -->
                       <h4 class="card-subtitle mb-2 text-muted">Season Schedule</h4>
                       <p class="card-text">2018-2019</p>
                       <a href="#" class="card-link">View Schedule</a>
@@ -60,16 +37,13 @@
                     </div>
                   </div>
                 </div>
-                  
+                  <!--Location name, Address and directions with link to google for directions-->
                 <div class ="Address">
                   <div class="card p-2">
                     <div class="card-body">
-                      <h5 class="card-title">Game Location</h5>
-                      <div style="height:400px;width:500px;" id="map" class="map"></div>
-                        </div>
-                      <h5 class="card-title">Ex: Pauley Pavilion</h5>
-                      <p class="card-text">301 Westwood Plaza</br>
-                      Los Angeles, CA 90095</p>
+                      <h5 class="card-title">Name of the actual place event is held (i.e., Wooden Arena</h5>
+                      <p class="card-text">Street Address</br>
+                      City, State, and Zip Code</p>
                       <a href="#" class="btn btn-primary">Get Directions</a>
                   </div>
                 </div>
@@ -85,15 +59,6 @@
                              <option value="1">John Smith</option>
                              <option value="2">Jane Smith</option>
                              <option value="3">Daniel Brown</option>
-                             <option value="4">Diana Brown</option>
-                             <option value="5">Sammy Smith</option>
-                             <option value="6">Samantha Smith</option>
-                             <option value="7">James Leonard II</option>
-                             <option value="8">Daisy Hill</option>
-                             <option value="9">Dina Hill</option>
-                             <option value="10">Maria Cooper</option>
-                             <option value="11">Bobby Evers</option>
-                             <option value="12">Sam Fisher</option>
                            </select>
                          </div>
                          <div class="col-auto my-1">
@@ -102,7 +67,7 @@
                        </div>
                      </form>
                    </div>
-                <!--Team names, rosters and starting players-->
+
                 <div class="card text-center p-2">
                   <div class ="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
@@ -132,7 +97,8 @@
                     </div>
                   </div>
                 </div>
-                  <!--Upcoming events-->
+
+                  
                   <div class="card">
                       <img class="card-img-top" src="..." alt="Google Calendar Events API">
                       <div class="card-header">
@@ -145,12 +111,12 @@
                         </ul>
                       </div>
                       </div>
+                          
+
+
                 </div>
              </div>
-            
-             <script src="assets/javascript/style.js"></script> 
-             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx5cc2k_BQVIdtWSwcbKi5rnXTko9qCSU&callback=initMap"
-             async defer></script>
-                    
+
+                  
   </body>
 </html>
