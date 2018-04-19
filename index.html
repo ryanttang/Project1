@@ -35,7 +35,11 @@
                   <div class="card">
                       <h5 class="card-title">Game Calendar</h5>
                       <button id="btnCreateEvents" class="btn btn-primary" onclick="makeApiCall();">
-                          Create Events</button>  
+                        Create Events</button>  
+                       <button id="btnDeleteEvents" class="btn btn-primary" onclick="deleteEvent();">
+                        Delete Events</button> 					
+                    <div id="event-response">
+                    </div>
       
                        <div id="divifm">
                           <iframe id="ifmCalendar" 
@@ -122,6 +126,7 @@
                   </div>
                 </div>
 
+                <div class="upcoming">
                   <div class="card">
                       <img class="card-img-top" src="..." alt="Google Calendar Events API">
                       <div class="card-header">
@@ -135,6 +140,7 @@
                       </div>
                       </div>
                 </div>
+              </div>
              </div>
             
              <script src="assets/javascript/style.js"></script> 
