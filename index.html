@@ -65,11 +65,29 @@
                       <h5 class="card-title">Game Location</h5>
                       <div style="height:400px;width:500px;" id="map" class="map"></div>
                         </div>
-                      <h5 class="card-title">Ex: Pauley Pavilion</h5>
-                      <p class="card-text">301 Westwood Plaza</br>
-                      Los Angeles, CA 90095</p>
-                      <a href="#" class="btn btn-primary">Get Directions</a>
+                        <div id="floating-panel">
+                          <b>Start: </b>
+                          <select id="start">
+                            <option value="union station, los angeles, ca">Union Station</option>
+                            <option value="301 Westwood Plaza, Los Angeles, CA 90095">Pauley Pavilion</option>
+                            <option value="STAPLES Center, South Figueroa Street, Los Angeles, CA">Staples Center</option>
+                            <option value="1000 Vin Scully Ave, Los Angeles, CA 90012">Dodger Stadium</option>
+                            <option value="3939 S Figueroa St, Los Angeles, CA 90037">Banc of California Stadium</option>
+                          </select>
+                          <b>End: </b>
+                          <select id="end">
+                            <option value="union station, los angeles, ca">Union Station</option>
+                            <option value="301 Westwood Plaza, Los Angeles, CA 90095">Pauley Pavilion</option>
+                            <option value="STAPLES Center, South Figueroa Street, Los Angeles, CA">Staples Center</option>
+                            <option value="1000 Vin Scully Ave, Los Angeles, CA 90012">Dodger Stadium</option>
+                            <option value="3939 S Figueroa St, Los Angeles, CA 90037">Banc of California Stadium</option>
+                          </select>
+                          </div>
+                          <div id="map"></div>
+                          &nbsp;
+                          <div id="warnings-panel"></div>
                   </div>
+                  
                 </div>
 
                 <div class="card text-center p-2">
@@ -128,8 +146,8 @@
                           Upcoming Events
                         </div>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Current Event 1</li>
-                          <li class="list-group-item">Current Event 2</li>
+                          <li class="list-group-item" id="events-past">Current Event 1</li>
+                          <li class="list-group-item" id="events-upcoming">Current Event 2</li>
                           <li class="list-group-item">Current Event 3</li>
                         </ul>
                       </div>
@@ -139,8 +157,8 @@
              <p>Say hello using the Calendar events API.</p>
 
              <div id='content'>
-              <button onclick="authenticate().then(loadClient)">authorize and load</button>
-
+              <button onclick="authenticate().thenloadClient()">authorize</button>
+              
               <button onclick="execute()">execute</button>
                            
               <ul id='events'></ul>
@@ -148,15 +166,16 @@
              
              
             
-             <script src="assets/javascript/style.js"></script> 
-             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx5cc2k_BQVIdtWSwcbKi5rnXTko9qCSU&callback=initMap"async defer></script>
+             <script src="assets/javascript/map.js"></script> 
+             
+             <!--script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx5cc2k_BQVIdtWSwcbKi5rnXTko9qCSU&callback=initMap"></script-->
+             <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwpJxnSuc5RDlObd-0tg2igXxYU40d6wg&callback=initMap">
+             </script>
              <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
              <script src="https://apis.google.com/js/api.js"></script>
              
-             <!--script async defer src="https://apis.google.com/js/api.js" 
-             onload="this.onload=function(){};handleClientLoad()" 
-             onreadystatechange="if (this.readyState === 'complete') this.onload()">
-           </script-->
+             <!--script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script-->
                     
   </body>
 </html>
