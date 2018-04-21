@@ -112,7 +112,7 @@
             appendPre('No upcoming events found.');
           }
         });
-      }
+      };
 
       // Google api console clientID and apiKey 
 
