@@ -180,5 +180,5 @@ gapi.client.load('calendar', 'v3', function () { // load the calendar api (versi
 // calendar ID which id of Google Calendar where you are creating events. this can be copied from your Google Calendar user view.
 
                    "resource": resource 	// above resource will be passed here
-               });                
-}
+               }               
+}); 
