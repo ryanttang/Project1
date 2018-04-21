@@ -49,7 +49,7 @@ renderButtons();
 
 var geo = navigator.geolocation;
 var losangeles = { lat: 34.07, lng: -118.24 };
-window.initMap = function () 
+window.initMap = function { 
   var markerArray = [];
 
   // Instantiate a directions service.
