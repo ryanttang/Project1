@@ -1,4 +1,5 @@
 
+      // EVENTS API
       // Client ID and API key from the Developer Console
       var CLIENT_ID = '463672788287-b7nicgrv2ldodtgq79vj7rul8615g31g.apps.googleusercontent.com';
       var API_KEY = 'AIzaSyDK5f1arv2v9X0DsiDMCQYe7DxElk_ivRc';
@@ -114,7 +115,7 @@
         });
       };
 
-// Google api console clientID and apiKey 
+// CALENDAR API
 
 var clientId = '463672788287-b7nicgrv2ldodtgq79vj7rul8615g31g.apps.googleusercontent.com';
 var apiKey = 'AIzaSyDK5f1arv2v9X0DsiDMCQYe7DxElk_ivRc';
