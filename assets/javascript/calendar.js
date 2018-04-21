@@ -1,4 +1,5 @@
 
+      
       // Client ID and API key from the Developer Console
       var CLIENT_ID = '463672788287-b7nicgrv2ldodtgq79vj7rul8615g31g.apps.googleusercontent.com';
       var API_KEY = 'AIzaSyDK5f1arv2v9X0DsiDMCQYe7DxElk_ivRc';
@@ -24,7 +25,7 @@
        *  Initializes the API client library and sets up sign-in state
        *  listeners.
        */
-      window.initClient = function { 
+      function initClient() {
         gapi.client.init({
           apiKey: API_KEY,
           clientId: CLIENT_ID,
@@ -180,5 +181,5 @@ gapi.client.load('calendar', 'v3', function () { // load the calendar api (versi
 // calendar ID which id of Google Calendar where you are creating events. this can be copied from your Google Calendar user view.
 
                    "resource": resource 	// above resource will be passed here
-      });                
+               });                
 }
