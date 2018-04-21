@@ -24,7 +24,7 @@
        *  Initializes the API client library and sets up sign-in state
        *  listeners.
        */
-      function initClient() {
+      window.initClient = function () 
         gapi.client.init({
           apiKey: API_KEY,
           clientId: CLIENT_ID,
