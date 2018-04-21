@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Google Calendar API Quickstart</title>
-    <meta charset='utf-8' />
-  </head>
-  <body>
-    <p>Google Calendar API Quickstart</p>
 
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize-button" style="display: none;">Authorize</button>
-    <button id="signout-button" style="display: none;">Sign Out</button>
-
-    <pre id="content"></pre>
-
-    <script type="text/javascript">
       // Client ID and API key from the Developer Console
-      var CLIENT_ID = '288154117701-cbohj4n3dmgo7um2cbssp4ihdokjev0o.apps.googleusercontent.com';
-      var API_KEY = 'AIzaSyBVWHAPOyMBPPX_BMba0K-v8JPUvdTaES0';
+      var CLIENT_ID = '463672788287-b7nicgrv2ldodtgq79vj7rul8615g31g.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyDK5f1arv2v9X0DsiDMCQYe7DxElk_ivRc';
 
       // Array of API discovery doc URLs for APIs used by the quickstart
       var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
@@ -100,7 +85,7 @@
       /**
        * Print the summary and start datetime/date of the next ten events in
        * the authorized user's calendar. If no events are found an
-       * appropriatxe message is printed.
+       * appropriate message is printed.
        */
       function listUpcomingEvents() {
         gapi.client.calendar.events.list({
@@ -129,11 +114,3 @@
         });
       }
 
-    </script>
-
-    <script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-  </body>
-</html>
