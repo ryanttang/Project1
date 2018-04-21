@@ -44,7 +44,7 @@ function initMap() {
   // var losangeles = { lat: 34.07, lng: -118.24 };
   // Create a map and center it on Manhattan.
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
+    zoom: 10,
     center: losangeles
   });
   // Create a renderer for directions and bind it to the map.
